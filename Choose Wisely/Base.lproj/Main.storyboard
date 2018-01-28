@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_Wisely" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-eq-w7c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-7b-ehT" userLabel="QuestionLabel">
+                                <rect key="frame" x="16" y="20" width="343" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="pa8-r2-uP8"/>
+                                    <constraint firstAttribute="width" constant="343" id="qUe-Yq-4Yk"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor amet etsy shoreditch jean shorts vexillologist raclette skateboard mustache plaid artisan kale chips hella. Freegan lo-fi roof party fashion axe 8-bit food truck cronut meh pitchfork selfies polaroid mlkshk. Brunch affogato mlkshk, waistcoat cold-pressed taxidermy letterpress 90's cronut +1. Succulents ennui hell of, beard synth taiyaki letterpress cornhole pork belly deep v pitchfork hexagon. Thundercats banh mi butcher photo booth. Pabst activated charcoal scenester, lomo affogato schlitz gluten-free church-key ugh. Tattooed church-key lomo, pabst paleo intelligentsia yuccie selfies plaid farm-to-table forage neutra offal.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-rf-4aS">
+                                <rect key="frame" x="16" y="398" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Top Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FDO-Ph-Pmg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5n-6b-a7J">
+                                <rect key="frame" x="16" y="481" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Bottom Button"/>
+                                <state key="normal" title="Bottom Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8y-Ox-kCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIe-lb-5pM">
+                                <rect key="frame" x="162" y="353" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.98241442441940308" green="0.037796922028064728" blue="0.92034399509429932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="o51-KG-dpb"/>
+                                    <constraint firstAttribute="height" constant="30" id="yDT-cb-7sm"/>
+                                </constraints>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kag-rN-5hR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6ad-7b-ehT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="80p-7B-gud"/>
+                            <constraint firstItem="JIe-lb-5pM" firstAttribute="top" secondItem="6ad-7b-ehT" secondAttribute="bottom" constant="8" id="8Rb-DR-eiY"/>
+                            <constraint firstItem="JIe-lb-5pM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="K8c-ou-ybq"/>
+                            <constraint firstItem="6ad-7b-ehT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dtb-Fc-oTO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ad-7b-ehT" secondAttribute="trailing" constant="16" id="gdK-o3-yby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JIe-lb-5pM" secondAttribute="trailing" constant="163" id="ree-lK-vYT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="o5n-6b-a7J" id="pv7-R4-1RF"/>
+                        <outlet property="restartBtn" destination="JIe-lb-5pM" id="ZrY-99-AJw"/>
+                        <outlet property="storyTextView" destination="6ad-7b-ehT" id="uSI-fX-CdE"/>
+                        <outlet property="topButton" destination="ygc-rf-4aS" id="raH-Kx-jpt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="505" height="944"/>
+    </resources>
+</document>
